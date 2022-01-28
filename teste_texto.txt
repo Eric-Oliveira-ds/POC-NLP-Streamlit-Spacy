@@ -1,0 +1,101 @@
+Texto do lead,Possivel Necessidade
+estamos com problemas de stock out,DS
+não sei como obter mais clientes,DS
+queria saber quanto iremos vender no próximo mês,DS
+qual produto colocamos na prateleira,DS
+qual peça de roupa vai vender mais,DS
+o banco de dados da empresa é lento,DE
+o servidor da empresa cai quando vendemos muito,DE
+nossos dados estão espalhados demais e a tomada de decisão é lenta,DE
+queriamos um único local com todas as nossas informações,DE
+queriamos nosso banco de dados na nuvem,DE
+nosso ETL tem vários gargalos,DE
+queriamos dashboards automáticos,BI
+não temos uma ferramenta de BI na empresa,BI
+não conseguimos acompanhar nossos índicadores,BI
+quero impresionar meu chefe com gráficos limpos,BI
+nossas métricas e índicadores são esquisitas,BI
+nosso site está lento,SI
+queremos um novo layout no site,SI
+vamos trabalhar com e-commerce e precisamos de um site,SI
+quando temos muitas visitas no site ele cai,SI
+queremos uma aplicação na internet com designer inovador,SI
+Business Intelligence,BI
+Inteligência de Negócios,BI
+Volume e lucratividade de vendas,DS
+Satisfação do empregado,DS
+Otimização de custos,DS
+ETL Extract Transform  Load Qlik Sense Python Qlik Data Integration e Pentaho,DE
+Data Warehouse,DE
+Governança de Dados,DE
+Visualização de Dados,BI
+Qlik Sense e Power BI,BI
+Distribuição Automatizada de Relatórios,BI
+Inteligência Artificial,DS
+Machine Learning,DS
+Estatística,DS
+análise preditiva e prescritiva,DS
+previsão de churn,DS
+previsão de demanda,DS
+detecção de fraude,DS
+designer de dashboards,BI
+detecção de anomalias,DS
+relatórios automatizados,BI
+pipeline GCP,DE
+pipeline Google Cloud Plataform,DE
+Microsoft Azure,DE
+análise de dados avançada,DS
+diminuição de custos,DS
+acompanhamento de métricas,BI
+organização de gráficos,BI
+Data Lake,DE
+Cloud Computing Big Data,DE
+Algoritmo para otimizar,DS
+Amazon Web Services AWS,DE
+Processamento de linguagem natural,DS
+NoSQL,DE
+Os clientes estão deixando o meu negócio,DS
+precisamos entender nossos clientes,DS
+queremos relatórios do setor finaceiro,BI
+precisamos de informações de fácil compreensão,BI
+nossas análises são muito manuais,BI
+perdemos muito tempo atualizando nossos relatórios,BI
+nosso site precisa ser encontrado com mais frequência,SI
+o website demora a ser renderizado,SI
+estamos querendo desenvolver um site,SI
+estamos querendo desenvolver um aplicativo mobile,SI
+queremos um aplicativo híbrido,SI
+queremos um sistema inteligente e robusto,SI
+nosso site precisa ser migrado para outro servidor,SI
+precisamos identificar os gostos dos nossos clientes,DS
+precisamos otimizar nossa prateleira no supermercado,DS
+queremos iniciar nossa cultura Data Driven,BI
+queremos criar um programa de fidelidade para nossos clientes,DS
+precisamos tomar decisões rápidas mas não temos dados,DE
+nossa base de dados não é segura,DE
+precisamos de uma governança de dados,DE
+nossas rotinas de TI são muito repetitivas e engessadas para volume de dados,DE
+nosso volume de dados está almentando exponencialmente,DE
+nossos dados tem alta variabilidade,DE
+como podemos oferecer o melhor produto,DS
+nossos KPI estão sem organização,BI
+estamos com problemas de stock out,DS
+estamos com problemas de precificação,DS
+precisamos de contar pessoas por perimetro urbano,DS
+precisamos identificar a qualidade da estrada e asfalto,DS
+precisamos de metrificar a qualidade do nosso setor operacional,BI
+precisamos mensurar a qualidade do nosso serviço,BI
+precisamos verificar o nível de satisfação dos nossos clientes,BI
+precisamos verificar o nível de satisfação dos nossos colaboradores,BI
+quais clientes devemos focar nossos investimentos,DS
+nosso sistema não é seguro,SI
+queremos fazer investimentos em aportes financeriros,DS
+precisamos de uma ferramenta de inteligência artificial,DS
+nossas principais ferramentas quebram bastante,DS
+gostariamos de identificar possíveis falhas periodicamente,DS
+não temos onde registrar nossas informações,DE
+não conseguimos obter informações em tempo hábil,DE
+não temos inteligência de dados em nosso negócio,BI
+nossos KPI e métricas são mal organizados,BI
+meu site é bom mais não temos boas taxas de conversão,SI
+nossas taxas de conversão estão abaixo do consideravél,DS
