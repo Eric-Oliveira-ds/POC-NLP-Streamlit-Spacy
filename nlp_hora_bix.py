@@ -47,7 +47,7 @@ def clf1(texto):
     return st.write(df_proba_nlp)
 
 
-def one():
+def main():
     
     st.title('Seja respondido por uma IA !')
     
@@ -66,5 +66,5 @@ def one():
 st.markdown("[**By Eric Oliveira**](https://www.linkedin.com/in/eric-oliveira-ds) ")
 
 if __name__ == '__main__':
-    one()
+    main()
     
