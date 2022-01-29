@@ -4,32 +4,35 @@ import numpy as np
 np.set_printoptions(suppress=True)
 from PIL import Image
 import spacy
+import spacy.cli 
+spacy.cli.download("pt_core_news_sm")
 from spacy.lang.pt.stop_words import STOP_WORDS
 import streamlit as st
 import string
 
 ########################################################################################################################################
 
+st.write("[**By Eric Oliveira**](https://www.linkedin.com/in/eric-oliveira-ds) ")
+
 image = Image.open('web-g4bea507f7_1920.jpg')
 st.image(image, caption='freepik', width=100, use_column_width='always')
 
-st.title('Speak With Me!')
+st.title('------------ Speak With Me! ------------')
 #########################################################################################################################################
-
 # carrega modelo de nlp
 modelo_nlp = spacy.load('modelo_nlp')
-
 
 def clf1(texto):
     
     # padrão de elementos de caracteres
     pontuacoes = string.punctuation
-    # carrega dicionario pt br
-    pln = spacy.load("pt_core_news_sm")
+    #
     stop_words = STOP_WORDS
     
     def preprocess(texto):
         texto = texto.lower()
+        # carrega dicionario pt br
+        pln = spacy.load("pt_core_news_sm")
         documento = pln(texto)
         
         lista = []
@@ -46,7 +49,6 @@ def clf1(texto):
     
     return st.write(df_proba_nlp)
 
-
 def main():
     
     st.title('Seja respondido por uma IA !')
@@ -55,15 +57,13 @@ def main():
                 """
     st.markdown(html_temp)
     
-    texto = st.text_area("Escreva o texto que o lead informou no diálogo",value="")
+    texto = st.text_area("Escreva o texto que o lead informou no diálogo e descubra o que ele precisa !",value="")
     
     df_proba_nlp = " "
     
     if st.button("Prever a necessidade de acordo ao texto digitado"):
         st.text('Resultados em uma tabela de probabilidades')
         df_proba_nlp = clf1(texto)
-
-st.markdown("[**By Eric Oliveira**](https://www.linkedin.com/in/eric-oliveira-ds) ")
 
 if __name__ == '__main__':
     main()
