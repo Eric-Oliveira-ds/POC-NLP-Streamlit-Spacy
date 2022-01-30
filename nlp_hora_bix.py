@@ -4,15 +4,17 @@ import numpy as np
 np.set_printoptions(suppress=True)
 from PIL import Image
 import spacy
-import spacy.cli 
+import spacy.cli
 spacy.cli.download("pt_core_news_sm")
 from spacy.lang.pt.stop_words import STOP_WORDS
 import streamlit as st
 import string
 
 ########################################################################################################################################
-
-st.write("[**By Eric Oliveira**](https://www.linkedin.com/in/eric-oliveira-ds) ")
+st.sidebar.subheader('About the app')
+st.sidebar.text('Speak With Me!')
+st.sidebar.info('Use the App and discover the interests of services for areas of technologies from texts.')
+st.sidebar.subheader('Developer by Eric Oliveira - [**LinkedIn**](https://www.linkedin.com/in/eric-oliveira-ds) ')
 
 image = Image.open('web-g4bea507f7_1920.jpg')
 st.image(image, caption='freepik', width=100, use_column_width='always')
@@ -22,17 +24,20 @@ st.title('------------ Speak With Me! ------------')
 # carrega modelo de nlp
 modelo_nlp = spacy.load('modelo_nlp')
 
-def clf1(texto):
+
+def prevendo(texto):
     
     # padrão de elementos de caracteres
     pontuacoes = string.punctuation
-    #
+    # remover textos redundantes(de, para, como) e deixar os com mais informação (perdeu, ganhou)
     stop_words = STOP_WORDS
-    
+
+    @st.cache
     def preprocess(texto):
         texto = texto.lower()
         # carrega dicionario pt br
         pln = spacy.load("pt_core_news_sm")
+        # aplica tratamento no texto recebido pelo usuario
         documento = pln(texto)
         
         lista = []
@@ -51,20 +56,19 @@ def clf1(texto):
 
 def main():
     
-    st.title('Seja respondido por uma IA !')
+    st.title('Be answered by an AI !')
     
     html_temp = """
                 """
     st.markdown(html_temp)
     
-    texto = st.text_area("Escreva o texto que o lead informou no diálogo e descubra o que ele precisa !",value="")
+    texto = st.text_area("Write the text that the lead informed in field below !",value="")
     
     df_proba_nlp = " "
     
-    if st.button("Prever a necessidade de acordo ao texto digitado"):
-        st.text('Resultados em uma tabela de probabilidades')
-        df_proba_nlp = clf1(texto)
+    if st.button("Predict the need"):
+        st.text('Results in a table below - loading...')
+        df_proba_nlp = prevendo(texto)
 
 if __name__ == '__main__':
     main()
-    
