@@ -67,7 +67,7 @@ def main():
     df_proba_nlp = " "
     
     if st.button("Predict the need"):
-        st.text('Results in a table below - loading...')
+        st.text('Results in a table below:')
         df_proba_nlp = prevendo(texto)
 
 if __name__ == '__main__':
